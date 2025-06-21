@@ -1,10 +1,10 @@
-# 📊 House Price Prediction - Machine Learning Final Project
+# House Price Prediction - Machine Learning Final Project
 
-## 📌 Overview
+## Overview
 
 This project aims to predict **house prices** using machine learning techniques. The dataset contains real estate features such as area, number of bedrooms/bathrooms, and additional amenities. The goal is to develop a model that accurately estimates house prices based on these attributes.
 
-## 📂 Dataset Description
+## Dataset Description
 
 - **Source:** Housing Price Dataset (Kaggle / UCI ML Repository) [[Dataset Link](https://www.kaggle.com/datasets/saurabhbadole/housing-price-data?resource=download)]
 - **Rows:** 545
@@ -26,7 +26,7 @@ This project aims to predict **house prices** using machine learning techniques.
 
 ---
 
-## 🔎 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 ### **Findings:**
 
@@ -43,22 +43,22 @@ This project aims to predict **house prices** using machine learning techniques.
 
 ---
 
-## 🛠 Preprocessing Steps
+## Preprocessing Steps
 
 ### **Steps Taken:**
 
-✔ Converted categorical variables to numerical using **One-Hot Encoding**.
-✔ Scaled numerical features using **MinMax Scaling** to standardize data.
-✔ Created **new features** such as:
+ Converted categorical variables to numerical using **One-Hot Encoding**.
+ Scaled numerical features using **MinMax Scaling** to standardize data.
+ Created **new features** such as:
 
 - `area_per_bedroom = area / bedrooms`
 - `bathrooms_per_bedroom = bathrooms / bedrooms`
 - `parking_per_story = parking / stories`
-  ✔ Removed low-correlation and redundant features to enhance model performance.
+   Removed low-correlation and redundant features to enhance model performance.
 
 ---
 
-## 🤖 Model Implementation
+## Model Implementation
 
 ### **Models Used:**
 
@@ -78,17 +78,17 @@ This project aims to predict **house prices** using machine learning techniques.
 
 ---
 
-## 📊 Model Evaluation
+## Model Evaluation
 
 ### **Metrics Used:**
 
-✔ **R² Score**: Measures how well the model explains variance (**0.64 for Linear Regression**).
-✔ **RMSE (Root Mean Squared Error)**: Shows average error magnitude.
-✔ **Actual vs. Predicted Scatter Plot**: To visualize prediction accuracy.
+ **R² Score**: Measures how well the model explains variance (**0.64 for Linear Regression**).
+ **RMSE (Root Mean Squared Error)**: Shows average error magnitude.
+ **Actual vs. Predicted Scatter Plot**: To visualize prediction accuracy.
 
 ---
 
-## 🚀 Challenges & Lessons Learned
+## Challenges & Lessons Learned
 
 ### **Challenges:**
 
@@ -98,29 +98,29 @@ This project aims to predict **house prices** using machine learning techniques.
 
 ### **Lessons Learned:**
 
-✅ **Simple models (Linear Regression) can sometimes outperform complex ones.**
-✅ **Feature selection is key**—removing unnecessary features helped improve performance.
-✅ **Scaling and encoding significantly impact results.**
+ **Simple models (Linear Regression) can sometimes outperform complex ones.**
+ **Feature selection is key**—removing unnecessary features helped improve performance.
+ **Scaling and encoding significantly impact results.**
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
-📂 MachineLearning-Final-Project
- ├── 📄 Kayden_Rumsey_Machine_Learning_Final.ipynb  # Full Jupyter Notebook
- ├── 📄 README.md  # Project Summary & Report
+ MachineLearning-Final-Project
+ ├── Kayden_Rumsey_Machine_Learning_Final.ipynb  # Full Jupyter Notebook
+ ├── README.md  # Project Summary & Report
 ```
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - **Try XGBoost or Gradient Boosting** for better accuracy.
 - **Hyperparameter tuning** to optimize Random Forest performance.
 - **Experiment with polynomial regression** to capture non-linear relationships.
 
-🎯 Final Conclusion:
+ Final Conclusion:
 
 This project highlighted the significance of data preprocessing, feature selection, and model evaluation in machine learning. While multiple models were tested, Linear Regression emerged as the best performer, explaining 64% of the variance in house prices. Feature engineering contributed marginally, reinforcing the need for careful selection of meaningful predictors. Despite Random Forest not surpassing Linear Regression, this experiment provided valuable insights into overfitting and model complexity. Future work will focus on hyperparameter tuning and advanced boosting techniques to improve predictive accuracy. 🚀
 
